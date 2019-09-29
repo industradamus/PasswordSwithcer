@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_padding"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_password"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/result_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/result_text_view"
+                style="@style/ResultText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/result_margin"
+                android:layout_marginBottom="@dimen/result_margin"
+                android:layout_weight="1"
+                android:textAppearance="@style/ResultTextAppearance"
+                tools:text="qWerTy" />
+
+            <ImageButton
+                android:id="@+id/result_copy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/result_copy_button_padding"
+                android:src="@drawable/ic_content_copy" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/source_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/edit_source_hint"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/password_difficult_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                tools:text="Слабоватый" />
+
+            <ImageView
+                android:id="@+id/password_difficult_indicator"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_weight="66"
+                android:background="@drawable/clip_indicator" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/password_generation_title"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <CheckBox
+            android:id="@+id/caps_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:checked="true"
+            android:text="@string/check_caps" />
+
+        <CheckBox
+            android:id="@+id/digits_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:checked="true"
+            android:text="@string/digits_check" />
+
+        <CheckBox
+            android:id="@+id/symbol_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/symbol_check" />
+
+        <SeekBar
+            android:id="@+id/password_length_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:max="25" />
+
+        <TextView
+            android:id="@+id/password_length_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Длина: 8 + 1 символ = 9 символов" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/result_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/generated_password_text_view"
+                style="@style/ResultText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/result_margin"
+                android:layout_marginBottom="@dimen/result_margin"
+                android:layout_weight="1"
+                android:textAppearance="@style/ResultTextAppearance"
+                tools:text="Трататататат" />
+
+            <ImageButton
+                android:id="@+id/generated_password_copy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:padding="@dimen/result_copy_button_padding"
+                android:src="@drawable/ic_content_copy" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/generate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/generate_button_border"
+            android:text="@string/button_generate" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Password Switcher</string>
+    <string name="enter_password">Здесь вы можете посмотреть свой пароль, созданный по методу: "Русское слово, в английской раскладке"</string>
+    <string name="edit_source_hint">Введите пароль</string>
+    <string name="clipboard_item">Пароль</string>
+    <string name="toast">Скопировано</string>
+    <string name="check_caps">Заглавные</string>
+    <string name="digits_check">Цифры</string>
+    <string name="symbol_check">Символы</string>
+    <string name="button_generate">Сгенерировать</string>
+    <string name="password_generation_title">Сгенерируйте новый пароль ему на замену</string>
+    <string name="difficult_very_easy">Очень слабый</string>
+    <string name="difficult_easy">Слабый</string>
+    <string name="difficult_medium">Средний</string>
+    <string name="difficult_strong">Сильный</string>
+    <string name="difficult_very_strong">Очень сильный</string>
+    <string name="length">Длина:&#160;</string>
+
+    <plurals name="specials">
+        <item quantity="one">&#160;+ %1$d спецсимвол</item>
+        <item quantity="two">&#160;+ %1$d спецсимвола</item>
+        <item quantity="few">&#160;+ %1$d спецсимвола</item>
+        <item quantity="many">&#160;+ %1$d спецсимволов</item>
+        <item quantity="other">&#160;+ %1$d спецсимволов</item>
+    </plurals>
+
+    <plurals name="digits">
+        <item quantity="one">&#160;+ %1$d цифра</item>
+        <item quantity="two">&#160;+ %1$d цифры</item>
+        <item quantity="few">&#160;+ %1$d цифры</item>
+        <item quantity="many">&#160;+ %1$d цифер</item>
+        <item quantity="other">&#160;+ %1$d цифер</item>
+    </plurals>
+
+    <plurals name="symbols">
+        <item quantity="one">&#160;= %1$d символ</item>
+        <item quantity="two">&#160;= %1$d симвоа</item>
+        <item quantity="few">&#160;= %1$d символа</item>
+        <item quantity="many">&#160;= %1$d символов</item>
+        <item quantity="other">&#160;= %1$d символов</item>
+    </plurals>
+
+    <plurals name="letters">
+        <item quantity="one"> %1$d буква</item>
+        <item quantity="two"> %1$d буквы</item>
+        <item quantity="few"> %1$d буквы</item>
+        <item quantity="many"> %1$d букв</item>
+        <item quantity="other"> %1$d букв</item>
+    </plurals>
+
+    <string-array name="russians">
+        <item>й</item>
+        <item>ц</item>
+        <item>у</item>
+        <item>к</item>
+        <item>е</item>
+        <item>н</item>
+        <item>г</item>
+        <item>ш</item>
+        <item>щ</item>
+        <item>з</item>
+        <item>х</item>
+        <item>ъ</item>
+        <item>ф</item>
+        <item>ы</item>
+        <item>в</item>
+        <item>а</item>
+        <item>п</item>
+        <item>р</item>
+        <item>о</item>
+        <item>л</item>
+        <item>д</item>
+        <item>ж</item>
+        <item>э</item>
+        <item>я</item>
+        <item>ч</item>
+        <item>с</item>
+        <item>м</item>
+        <item>и</item>
+        <item>т</item>
+        <item>ь</item>
+        <item>б</item>
+        <item>ю</item>
+        <item>.</item>
+        <item>ё</item>
+    </string-array>
+
+    <string-array name="latin">
+        <item>q</item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>y</item>
+        <item>u</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+        <item>[</item>
+        <item>]</item>
+        <item>a</item>
+        <item>s</item>
+        <item>d</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>;</item>
+        <item>\'</item>
+        <item>z</item>
+        <item>x</item>
+        <item>c</item>
+        <item>v</item>
+        <item>b</item>
+        <item>n</item>
+        <item>m</item>
+        <item>,</item>
+        <item>.</item>
+        <item>/</item>
+        <item>`</item>
+    </string-array>
+</resources>
