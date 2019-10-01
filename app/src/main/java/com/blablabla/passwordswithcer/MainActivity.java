@@ -5,7 +5,6 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.graphics.PorterDuff;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -113,14 +112,13 @@ public class MainActivity extends Activity {
         digitCheckBox = findViewById(R.id.digits_check_box);
         symbolCheckBox = findViewById(R.id.symbol_check_box);
 
-        generateButton = findViewById(R.id.generate_button);
         passwordDifficult = findViewById(R.id.password_difficult_text_view);
         passwordDifficultIndicator = findViewById(R.id.password_difficult_indicator);
+
         passwordLengthSeekBar = findViewById(R.id.password_length_seek_bar);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            passwordLengthSeekBar.setMin(1);
-        }
         passwordLengthText = findViewById(R.id.password_length_text_view);
+
+        generateButton = findViewById(R.id.generate_button);
         generatedPasswordCopyButton = findViewById(R.id.generated_password_copy_button);
         generatedPasswordCopyButton.setEnabled(false);
         generatedPasswordText = findViewById(R.id.generated_password_text_view);
