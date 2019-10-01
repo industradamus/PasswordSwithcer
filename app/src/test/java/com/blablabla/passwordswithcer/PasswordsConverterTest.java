@@ -10,22 +10,21 @@ public class PasswordsConverterTest {
     private static final String[] RUS = {"й", "ц", "у", "к", "е", "н"};
     private static final String[] ENG = {"q", "w", "e", "r", "t", "y"};
 
-    private static final String[] SOURCES = {"", "некуцй", "йцукен", "зщшгне"};
-    private static final String[] RESULT = {"", "ytrewq", "qwerty", "poiuyt"};
+    private static final String[] SOURCES = {"", "некуцй", "йцукен"};
+    private static final String[] RESULT = {"", "ytrewq", "qwerty"};
 
     private PasswordsConverter helper;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         helper = new PasswordsConverter(RUS, ENG);
     }
 
     @Test
     public void convertRussianToLatin() {
-        assertTrue("Error in test case", SOURCES.length == RESULT.length);
+        assertEquals("Error in test case", SOURCES.length, RESULT.length);
         assertEquals("", helper.convertRussianToLatin(""));
         for (int i = 0; i < SOURCES.length; i++) {
-
             assertEquals(RESULT[i], helper.convertRussianToLatin(SOURCES[i]));
         }
 
